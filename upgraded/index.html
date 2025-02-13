@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="badge">Currency Converter</div>
+        <h1 class="title">Currency Converter</h1>
+        <p class="subtitle">
+          Convert between Indian Rupees (INR) and major world currencies with real-time exchange rates.
+        </p>
+      </div>
+
+      <div class="converter">
+        <div class="input-group">
+          <input type="number" id="amount" value="1" min="0" step="0.01">
+          <select id="fromCurrency">
+            <option value="INR">Indian Rupee (INR)</option>
+            <option value="USD">US Dollar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">British Pound (GBP)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="CAD">Canadian Dollar (CAD)</option>
+            <option value="CHF">Swiss Franc (CHF)</option>
+            <option value="CNY">Chinese Yuan (CNY)</option>
+          </select>
+        </div>
+
+        <button class="swap-btn" id="swapBtn">↑↓ Swap Currencies</button>
+
+        <div class="input-group">
+          <select id="toCurrency">
+            <option value="USD">US Dollar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">British Pound (GBP)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="CAD">Canadian Dollar (CAD)</option>
+            <option value="CHF">Swiss Franc (CHF)</option>
+            <option value="CNY">Chinese Yuan (CNY)</option>
+            <option value="INR">Indian Rupee (INR)</option>
+          </select>
+        </div>
+
+        <div class="result" id="result">Loading...</div>
+      </div>
+      <div class="footer">
+        © (Miss WebDesigner)<b>Sneha Ghosh</b>(@Technical_Isopod_075)
+      </div>
+    </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
